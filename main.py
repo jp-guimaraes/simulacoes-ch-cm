@@ -9,6 +9,16 @@ caso_base_ebm = subtrai_dicts(ebm, b)
 caso_base_jogos = subtrai_dicts(jogos, b)
 caso_base_eletro = subtrai_dicts(eletro, b)
 
+# print("caso base eletro")
+# print(json.dumps(caso_base_eletro, indent=2, ensure_ascii=False))
+# print("caso base info")
+# print(json.dumps(caso_base_info, indent=2, ensure_ascii=False))
+# print("caso base ebm")
+# print(json.dumps(caso_base_ebm, indent=2, ensure_ascii=False))
+# print("caso base jogos")
+# print(json.dumps(caso_base_jogos, indent=2, ensure_ascii=False))
+
+
 
 # %% simulando carga horária 
 
@@ -23,7 +33,7 @@ def calcula_soma_total(mult_info, mult_jogos, mult_ebm, mult_eletro):
 
 
 print("------------------------------"*4)
-cenario = [8,5,7,0]
+cenario = [7,5,8,0]
 parametros = [x/4 for x in cenario]
 nome_cenario = "".join([str(x) for x in cenario])
 print(f"cenário {nome_cenario}")
